@@ -1,10 +1,10 @@
 body { 
     background-color: white;
-};
+}
   
-.container {
+.countainer {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-};
+}
