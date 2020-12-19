@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 
 import Cards from './components/Cards/Cards';
@@ -5,6 +6,7 @@ import Chart from './components/Chart/Chart';
 import CountryPicker from './components/CountryPicker/CountryPicker';
 
 import styles from "./App.module.css"
+import coronoImage from './images/image.png'
 
 import { fetchData } from './api';
 
@@ -38,6 +40,7 @@ class App extends React.Component {
 
     return (
       <div className={styles.countainer}>
+        <img src={coronoImage}/>
         <Cards data={data} />
         <CountryPicker handleCountryChange={this.handleCountryChange}/>
         <Chart data={data} country={country} />
